@@ -1,0 +1,50 @@
+@import '../../assets/abstracts/mixins';
+@import '../../assets/abstracts/variables';
+
+.podcast-list {
+    margin-top: 50px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 580px) {
+        justify-content: center;
+    }
+
+    &__filter,
+    &__results {
+        align-items: center;
+    }
+
+    &__filter {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 50px 300px;
+        justify-content: flex-end;
+    }
+
+    &__error {
+        color: $error-color;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    &__results {
+        background-color: $base-color;
+        border-radius: 5px;
+        color: $white-color;
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+        width: 50px;
+    }
+
+    &__search {
+        height: 40px;
+        width: 300px;
+        border-radius: 4px;
+        border: 1px solid $input-color;
+        padding-left: 16px;
+        color: $text-color;
+    }
+}

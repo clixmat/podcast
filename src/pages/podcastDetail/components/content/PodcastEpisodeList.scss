@@ -1,0 +1,71 @@
+@import '../../../../assets/abstracts/mixins';
+@import '../../../../assets/abstracts/variables';
+
+.podcast-detail-episodes {
+    &__header {
+        @include resource-card;
+        align-items: center;
+        color: $title-color;
+        display: flex;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 1em;
+        padding: 10px 16px;
+    }
+
+    &__data-table {
+        @include resource-card;
+        padding: 2em 1.2em;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    &__label {
+        font-weight: bold;
+        text-align: left;
+        padding-bottom: 10px;
+
+        &:first-child {
+            width: 75%;
+        }
+    }
+
+    &__item {
+        border-bottom: 1px solid rgba(0, 0, 0, 5%);
+        height: 2.5em;
+
+        &:nth-child(even) {
+            background: $white-color;
+        }
+        &:nth-child(odd) {
+            background: rgb(0, 0, 0, 5%);
+        }
+
+        & td {
+            border-top: 1px solid rgba(0, 0, 0, 10%);
+        }
+
+        & td:first-child {
+            border-left: 0;
+            padding: 10px;
+        }
+
+        & td:last-child {
+            border-right: 0;
+        }
+
+        &--link {
+            color: $base-color;
+            text-decoration: none;
+        }
+
+        &--data {
+            border-bottom: 1px solid rgba(0, 0, 0, 5%);
+        }
+
+        &--title {
+            padding-left: 0.5em;
+            width: 72%;
+        }
+    }
+}

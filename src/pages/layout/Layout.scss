@@ -1,0 +1,22 @@
+@import '../../assets/abstracts/variables';
+@import '../../assets/abstracts/mixins';
+
+.layout-container {
+    max-width: 1280px;
+    padding: 0 16px;
+    margin: 0 auto;
+
+    &.__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        padding: 0.5rem;
+
+        & a {
+            align-items: center;
+            color: $base-color;
+            display: flex;
+            text-decoration: none;
+        }
+    }
+}

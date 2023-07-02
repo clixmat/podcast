@@ -1,0 +1,43 @@
+@import '../../../assets/abstracts/mixins';
+@import '../../../assets/abstracts/variables';
+
+.podcast-detail-card {
+    @include resource-card;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-around;
+    min-height: 400px;
+    padding: 24px 10px;
+    position: sticky;
+    top: 16px;
+    width: 270px;
+
+    &__image {
+        display: flex;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    &__header {
+        border: 1px solid rgba(0, 0, 0, 7%);
+        border-left: 0;
+        border-right: 0;
+        margin: 24px 0 16px 0;
+        padding: 20px 0;
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__path {
+        color: $title-color;
+        text-decoration: none;
+    }
+    &__author,
+    &__description {
+        font-style: italic;
+        @include resource-text;
+    }
+}

@@ -1,0 +1,9 @@
+@mixin resource-text {
+    line-height: 1.5rem;
+}
+
+@mixin resource-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}

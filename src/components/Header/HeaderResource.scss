@@ -1,0 +1,17 @@
+@import '../../assets/abstracts/variables';
+@import '../../assets/abstracts/mixins';
+
+.header-resource {
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 16px 0px 10px 0px;
+
+    &__title {
+        color: $base-color;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
